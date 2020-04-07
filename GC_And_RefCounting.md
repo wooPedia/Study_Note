@@ -1,3 +1,4 @@
+## [시작하기 전에]
 프로그래밍 언어엔 메모리를 프로그래머가 직접 관리해주는 unmanaged 언어와 언어단에서 관리해주는 managed 언어가 있다. 대표적인 예로 C/C++가 unmanaged 언어이며 C#, Java가 managed 언어이다.
 
 대부분의 매니지드 언어에선 자동으로 메모리 관리를 하기 위해 다음 중 하나의 기법을 사용한다. 
@@ -5,6 +6,8 @@
 
 - Garbage collection (가비지 컬렉션 또는 쓰레기 수집)
 - Reference counting (레퍼런스 카운팅 또는 참조 횟수)
+
+<br>
 
 ## [Garbage collection]
 가비지 컬렉션을 한국말로 굳이 번역하면 쓰레기 수집인데, 사용되지 않는 메모리를 언어단에서 수집하여 지운다는 의미로 보면된다. 여기서 메모리는 힙 메모리를 뜻한다. 지역 변수와 같이 스택 메모리에 할당되는 메모리는 자신의 scope를 벗어나면 사라지는 특성을 가지기 때문에 해제에 대한 신경을 써주지 않아도 된다.
@@ -190,3 +193,7 @@ T* RefHandle<T>::operator->() const
     return mPtr;
 }
 ```
+
+<br>
+
+Blog: https://woo-dev.tistory.com/61
